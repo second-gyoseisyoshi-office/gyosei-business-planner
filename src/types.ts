@@ -1,0 +1,4 @@
+export type Service = { id:string; officialNumber:number; name:string; category:string; respondents:number; average:number; mode:number; min:number; max:number; median?:number; bands:{label:string;rate:number}[] };
+export type PlanService = { id:string; serviceId:string; fee:number; cases:number; cost:number; hours:number; conversion:number; inquiryRate:number; ads:number; priority:'高'|'中'|'低'; recurring:boolean; memo:string };
+export type Expense = { id:string; name:string; monthly:number; kind:'fixed'|'variable'|'personal' };
+export type Plan = { id:string; name:string; office:string; year:number; status:string; prefecture:string; revenueTarget:number; profitTarget:number; monthlyHours:number; memo:string; services:PlanService[]; expenses:Expense[]; ownerLiving:number; reserve:number; taxReserve:number; updatedAt:string };

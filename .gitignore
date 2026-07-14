@@ -1,0 +1,23 @@
+# dependencies and build output
+node_modules/
+dist/
+*.tsbuildinfo
+
+# local Codex workspace files
+.agents/
+.codex/
+work/
+outputs/
+
+# local environment and logs
+.env
+.env.*
+!.env.example
+.dev.vars
+*.log
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
