@@ -33,5 +33,6 @@ const categoryOrder = [
 
 export const categories = [
   'すべて',
+  '任意業務',
   ...categoryOrder.filter(category => services.some(service => service.category === category)),
 ];
